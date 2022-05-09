@@ -2,20 +2,30 @@ import { Request, Response } from "express";
 
 const roomsController = {
   // POST
-  creation: (req: Request, res: Response) => {
-    res.send("connected");
+  creation: async (req: Request, res: Response) => {
+    res.send("creation");
   },
 
   // PATCH
-  title: () => {},
-  categories: () => {},
+  title: async (req: Request, res: Response) => {
+    res.send("title");
+  },
+  categories: async (req: Request, res: Response) => {
+    res.send("categories");
+  },
 
   // GET
-  mostuser: () => {},
-  count: () => {},
+  mostuser: async (req: Request, res: Response) => {
+    res.send("mostuser");
+  },
+  count: async (req: Request, res: Response) => {
+    res.send("count");
+  },
 
   // DELETE
-  deletion: () => {},
+  deletion: async (req: Request, res: Response) => {
+    res.send("deletion");
+  },
 };
 
 export default roomsController;
