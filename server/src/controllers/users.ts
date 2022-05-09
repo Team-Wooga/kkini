@@ -1,16 +1,26 @@
-import { Router } from "express";
+import { Request, Response } from "express";
 
+const usersController = {
+	// POST
+	entrance: (req: Request, res: Response) => {
+		res.send("entrance");
+	},
 
-// POST
+	// PATCH
+	changeadmin: (req: Request, res: Response) => {
+		res.send("changeadmin");
+	},
 
+	// GET
 
-// PATCH
+	count: (req: Request, res: Response) => {
+		res.send("count");
+	},
 
+	// DELETE
+	deletion: (req: Request, res: Response) => {
+		res.send("deletion");
+	},
+};
 
-// GET
-
-
-// DELETE
-
-
-export default Router
+export default usersController;
