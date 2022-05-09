@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
 
-const usersRouter = {
+const usersController = {
   // POST
   entrance: async (req: Request, res: Response) => {
     res.send("entrance");
@@ -22,4 +22,4 @@ const usersRouter = {
   },
 };
 
-export default usersRouter;
+export default usersController;
