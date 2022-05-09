@@ -1,16 +1,25 @@
-import { Router } from "express";
+import { Request, Response } from "express";
 
+const usersRouter = {
+  // POST
+  entrance: async (req: Request, res: Response) => {
+    res.send("entrance");
+  },
 
-// POST
+  // PATCH
+  changeAdmin: async (req: Request, res: Response) => {
+    res.send("changeAdmin");
+  },
 
+  // GET
+  count: async (req: Request, res: Response) => {
+    res.send("count");
+  },
 
-// PATCH
+  // DELETE
+  deletion: async (req: Request, res: Response) => {
+    res.send("deletion");
+  },
+};
 
-
-// GET
-
-
-// DELETE
-
-
-export default Router
+export default usersRouter;
