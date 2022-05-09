@@ -1,26 +1,25 @@
 import { Request, Response } from "express";
 
 const usersController = {
-	// POST
-	entrance: (req: Request, res: Response) => {
-		res.send("entrance");
-	},
+  // POST
+  entrance: async (req: Request, res: Response) => {
+    res.send("entrance");
+  },
 
-	// PATCH
-	changeadmin: (req: Request, res: Response) => {
-		res.send("changeadmin");
-	},
+  // PATCH
+  changeAdmin: async (req: Request, res: Response) => {
+    res.send("changeAdmin");
+  },
 
-	// GET
+  // GET
+  count: async (req: Request, res: Response) => {
+    res.send("count");
+  },
 
-	count: (req: Request, res: Response) => {
-		res.send("count");
-	},
-
-	// DELETE
-	deletion: (req: Request, res: Response) => {
-		res.send("deletion");
-	},
+  // DELETE
+  deletion: async (req: Request, res: Response) => {
+    res.send("deletion");
+  },
 };
 
 export default usersController;
