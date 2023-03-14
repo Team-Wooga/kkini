@@ -1,3 +1,18 @@
-# Wooga-Chat
+# kkini
 
-### 프로젝트 소개
+### **Tech**
+
+- **Front**
+    - Dart
+    - Flutter
+- **Back**
+    - Typescript
+    - NestJS
+- **Database**
+    - PostgreSQL
+    - TypeORM or MicroORM
+- **Deploy**
+    - Docker
+    - Github Action CI/CD
+- **Tool**
+    - Slack / Notion
